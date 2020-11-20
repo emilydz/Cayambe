@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+  <head>
+    <meta charset="utf-8">
+    <title>Cayambe</title>
+    <script src="https://aframe.io/releases/1.0.4/aframe.min.js"></script>
+  </head>
+  <body>
+    <a-scene>
+      <a-assets>
+      <a-asset-item id="cayambe" src="cayambemain5.glb"></a-asset-item>
+      </a-assets>
+
+
+      <a-entity light="type: hemisphere; color: #FFF; groundColor: #CCC; intensity: 2"></a-entity>
+
+
+      <a-entity bmfont-text="text: HELLO!; color: #000;" position="10 10 100" scale="5 5 5 "></a-entity>
+
+
+<a-entity position="5 10 30" camera wasd-controls look-controls acceleration:200  animation="property:position; to: 0 7 0; dur: 10000"></a-entity>
+
+      <a-entity rotation="10 45 0" scale=".5 .5 .5" position="0 0 -30" gltf-model="#cayambe"></a-entity>
+
+      <a-sky color="#ECECEC"></a-sky>
+    </a-scene>
+  </body>
+</html>
